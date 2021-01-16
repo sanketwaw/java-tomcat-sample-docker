@@ -1,4 +1,4 @@
 FROM tomcat:8.0
-RUN cp -a **/*.war /var/lib/jenkins/workspace/Build_Tomcat_Docker_Image/target/
+RUN cp -a **/*.war /opt/tomcat/
 EXPOSE 9092
 CMD ["catalina.sh", "run"]
